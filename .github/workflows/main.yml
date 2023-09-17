@@ -1,0 +1,17 @@
+name: Trigger Workflow
+
+on:
+  workflow_dispatch 
+  # repository_dispatch:
+  #   types: [trigger-workflow]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Add your build steps here
+

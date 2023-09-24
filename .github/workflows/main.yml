@@ -2,8 +2,8 @@ name: Trigger Workflow
 
 on:
   workflow_dispatch 
-  # repository_dispatch:
-  #   types: [trigger-workflow]
+  repository_dispatch:
+    types: [trigger-workflow]
 
 jobs:
   build:
